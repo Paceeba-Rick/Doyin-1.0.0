@@ -1,0 +1,11 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- This is a placeholder SVG - the actual Doyin logo should be used -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="#0a1428"/>
+  <text x="300" y="180" font-size="120" font-weight="bold" text-anchor="middle" fill="url(#gradient)" font-family="Arial">Doyin</text>
+</svg>
