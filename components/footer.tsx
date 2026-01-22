@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="text-2xl font-bold text-background">Doyin</div>
             <p className="text-sm text-secondary-foreground/70">
-              Campus delivery made easy. Food, groceries, accessories, and stationery – all in one app.
+              Campus E-Commerce made easy. Food, groceries, accessories, and stationery – all in one app.
             </p>
             <div className="flex gap-2 pt-4">
               <div className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-background/20 cursor-pointer transition-colors">

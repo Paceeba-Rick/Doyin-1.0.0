@@ -16,9 +16,9 @@ export default function HeroSection() {
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 lg:order-1 order-2">
             <div className="space-y-3">
               <div className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
                 <span className="text-sm font-semibold text-accent">Campus E-Commerce Marketplace</span>
@@ -65,7 +65,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right Visual - App Carousel */}
-          <div className="hidden lg:flex items-center justify-center relative">
+          <div className="flex items-center justify-center relative lg:order-2 order-1 mt-8 lg:mt-0">
             <AppCarousel />
           </div>
         </div>
