@@ -12,22 +12,38 @@ export const metadata: Metadata = {
   title: 'Doyin | Fast Campus Delivery & Custom Errands',
   description: 'Doyin connects you to food vendors, groceries, accessories, stationery and more right on campus. Plus use our unique Custom Order feature for quick errands.',
   generator: 'v0.app',
+  metadataBase: new URL('https://doyin.app'),
+  keywords: ['campus marketplace', 'delivery', 'food', 'groceries', 'doyin'],
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
+        url: '/doyin-favicon.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/doyin-favicon.svg',
+  },
+  openGraph: {
+    title: 'Doyin | Fast Campus Delivery & Custom Errands',
+    description: 'Shop everything on campus - food, groceries, accessories, stationery and more. Fast delivery + unique custom errand service.',
+    url: 'https://doyin.app',
+    siteName: 'Doyin',
+    images: [
+      {
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Doyin.logo-r7VenzMqc5rCmo48xv9qdWrTlGLJYe.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Doyin Campus Marketplace',
+        type: 'image/jpeg',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Doyin | Fast Campus Delivery & Custom Errands',
+    description: 'Shop everything on campus - food, groceries, accessories, stationery and more. Fast delivery + unique custom errand service.',
+    images: ['https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Doyin.logo-r7VenzMqc5rCmo48xv9qdWrTlGLJYe.jpeg'],
   },
 }
 
