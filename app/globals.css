@@ -1,7 +1,11 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
+
+html,
+body {
+  overflow-x: hidden;
+}
 
 :root {
   --background: oklch(0.985 0 0);
