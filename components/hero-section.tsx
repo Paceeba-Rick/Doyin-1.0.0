@@ -41,7 +41,7 @@ export default function HeroSection() {
               </Button>
               <Button size="lg" variant="outline" asChild className="gap-2 bg-transparent">
                 <Link href="#contact">
-                  Learn More
+                 Community 
                   <ArrowRight size={20} />
                 </Link>
               </Button>

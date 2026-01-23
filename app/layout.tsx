@@ -9,7 +9,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Doyin | Fast Campus Delivery & Custom Errands',
+  title: 'Doyin | Campus-Based E-Commerce with Fast Delivery & Custom Errands',
   description: 'Doyin connects you to food vendors, groceries, accessories, stationery and more right on campus. Plus use our unique Custom Order feature for quick errands.',
   generator: 'v0.app',
   metadataBase: new URL('https://doyin.app'),
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     apple: '/doyin-favicon.svg',
   },
   openGraph: {
-    title: 'Doyin | Fast Campus Delivery & Custom Errands',
+    title: 'Doyin | Campus-Based E-Commerce with Fast Delivery & Custom Errands',
     description: 'Shop everything on campus - food, groceries, accessories, stationery and more. Fast delivery + unique custom errand service.',
     url: 'https://doyin.app',
     siteName: 'Doyin',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Doyin | Fast Campus Delivery & Custom Errands',
+    title: 'Doyin | Campus-Based E-Commerce with Fast Delivery & Custom Errands',
     description: 'Shop everything on campus - food, groceries, accessories, stationery and more. Fast delivery + unique custom errand service.',
     images: ['https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Doyin.logo-r7VenzMqc5rCmo48xv9qdWrTlGLJYe.jpeg'],
   },

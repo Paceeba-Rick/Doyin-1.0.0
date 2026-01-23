@@ -46,7 +46,7 @@ export default function CustomOrder() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Get Matched with an Agent</h4>
+                    <h4 className="font-semibold text-foreground">Pick from a list of available Agents</h4>
                     <p className="text-muted-foreground">A verified delivery agent accepts your request.</p>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ export default function CustomOrder() {
                   <Clock className="text-accent" size={24} />
                 </div>
                 <h4 className="font-semibold text-foreground mb-2">Quick Turnaround</h4>
-                <p className="text-sm text-muted-foreground">Most errands completed within hours.</p>
+                <p className="text-sm text-muted-foreground">Most errands completed within minutes.</p>
               </Card>
 
               {/* Card 3 */}
