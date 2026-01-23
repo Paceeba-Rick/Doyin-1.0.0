@@ -67,27 +67,43 @@ const AppCarousel = () => {
 
   return (
     <div className="relative w-full flex items-center justify-center py-6 sm:py-8 lg:py-12 px-4">
-      {/* iPhone 14 Pro Max Mockup - Responsive */}
-      <div className="relative" style={{ width: 'clamp(160px, 85vw, 280px)', aspectRatio: '9/16' }}>
-        {/* Outer phone body - dark titanium */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900 rounded-3xl shadow-2xl" style={{ padding: '12px' }}>
-          {/* Inner screen area with rounded corners */}
-          <div className="relative w-full h-full bg-black rounded-3xl overflow-hidden">
-            {/* Dynamic Island (notch) */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-50 bg-black rounded-full" style={{ width: 'clamp(80px, 50%, 150px)', height: 'clamp(20px, 6%, 28px)', marginTop: 'clamp(4px, 2%, 8px)' }}></div>
+      {/* iPhone 17 Mockup - Responsive */}
+      <div className="relative" style={{ width: 'clamp(160px, 85vw, 290px)', aspectRatio: '9/19.5' }}>
+        {/* Outer phone body - Premium titanium with ultra-thin bezel */}
+        <div 
+          className="absolute inset-0 rounded-3xl shadow-2xl"
+          style={{ 
+            padding: '8px',
+            background: 'linear-gradient(135deg, #8b8b8b 0%, #4a4a4a 50%, #2a2a2a 100%)',
+            boxShadow: 'inset 0 1px 3px rgba(255,255,255,0.1), 0 20px 40px rgba(0,0,0,0.6)'
+          }}
+        >
+          {/* Inner screen area with minimal bezel */}
+          <div className="relative w-full h-full bg-black rounded-2xl overflow-hidden border border-gray-800">
+            {/* Premium pill-shaped Dynamic Island */}
+            <div 
+              className="absolute top-0 left-1/2 transform -translate-x-1/2 z-50 bg-black rounded-full"
+              style={{ 
+                width: 'clamp(90px, 45%, 120px)', 
+                height: 'clamp(18px, 5%, 24px)', 
+                marginTop: 'clamp(6px, 3%, 10px)',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(255,255,255,0.05)'
+              }}
+            ></div>
 
-            {/* Screen display area */}
-            <div className="relative w-full h-full overflow-hidden bg-black">
-              {/* Slides */}
+            {/* Premium AMOLED-like display */}
+            <div className="relative w-full h-full overflow-hidden bg-black" style={{ backgroundColor: '#000' }}>
+              {/* Slides with enhanced transitions */}
               {slides.map((slide, index) => (
                 <div
                   key={slide.id}
-                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                    index === currentSlide ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                  className={`absolute inset-0 transition-all duration-500 ease-out ${
+                    index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-98 pointer-events-none'
                   }`}
                 >
                   <img
-                    src={slide.image}
+                    src={slide.image || "/placeholder.svg"}
                     alt={slide.title}
                     className="w-full h-full object-cover object-center"
                     crossOrigin="anonymous"
@@ -96,17 +112,43 @@ const AppCarousel = () => {
                 </div>
               ))}
 
-              {/* Navigation Arrows - positioned outside the screen, hidden on very small screens */}
+              {/* Navigation Arrows - Premium glass-morphism style */}
               <button
                 onClick={prevSlide}
-                className="absolute sm:-left-16 sm:top-1/2 sm:-translate-y-1/2 left-2 bottom-2 z-10 bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white p-2 sm:p-3 rounded-full transition-all text-lg sm:text-base"
+                className="absolute sm:-left-16 sm:top-1/2 sm:-translate-y-1/2 left-2 bottom-2 z-10 text-white p-2 sm:p-3 rounded-full transition-all text-lg sm:text-base"
+                style={{
+                  background: 'rgba(255,255,255,0.1)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255,255,255,0.2)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.2)'
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.4)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.1)'
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'
+                }}
                 aria-label="Previous slide"
               >
                 ←
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute sm:-right-16 sm:top-1/2 sm:-translate-y-1/2 right-2 bottom-2 z-10 bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white p-2 sm:p-3 rounded-full transition-all text-lg sm:text-base"
+                className="absolute sm:-right-16 sm:top-1/2 sm:-translate-y-1/2 right-2 bottom-2 z-10 text-white p-2 sm:p-3 rounded-full transition-all text-lg sm:text-base"
+                style={{
+                  background: 'rgba(255,255,255,0.1)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255,255,255,0.2)'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.2)'
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.4)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.1)'
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'
+                }}
                 aria-label="Next slide"
               >
                 →
@@ -115,17 +157,30 @@ const AppCarousel = () => {
           </div>
         </div>
 
-        {/* Dot Indicators below phone - responsive positioning */}
-        <div className="absolute sm:-bottom-16 -bottom-12 left-1/2 -translate-x-1/2 flex gap-1 sm:gap-2">
+        {/* Modern dot indicators with smooth transitions */}
+        <div className="absolute sm:-bottom-16 -bottom-12 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`rounded-full transition-all ${
-                index === currentSlide
-                  ? 'bg-cyan-400 w-4 sm:w-6 h-2'
-                  : 'bg-gray-400 w-2 h-2 hover:bg-gray-300'
-              }`}
+              className="rounded-full transition-all duration-300"
+              style={{
+                width: index === currentSlide ? 'clamp(12px, 5vw, 24px)' : '6px',
+                height: '6px',
+                backgroundColor: index === currentSlide ? '#00d9ff' : '#6b7280',
+                opacity: index === currentSlide ? 1 : 0.6,
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                if (index !== currentSlide) {
+                  e.currentTarget.style.backgroundColor = '#9ca3af'
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (index !== currentSlide) {
+                  e.currentTarget.style.backgroundColor = '#6b7280'
+                }
+              }}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
