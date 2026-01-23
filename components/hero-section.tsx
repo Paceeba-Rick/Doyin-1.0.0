@@ -33,16 +33,16 @@ export default function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Button size="sm" sm:size="lg" asChild className="gap-2">
+              <Button asChild className="gap-2">
                 <Link href="#download">
-                  <Download size={18} />
-                  <span>Download App</span>
+                  <Download size={20} />
+                  Download App
                 </Link>
               </Button>
-              <Button size="sm" sm:size="lg" variant="outline" asChild className="gap-2 bg-transparent">
+              <Button variant="outline" asChild className="gap-2 bg-transparent">
                 <Link href="#contact">
-                  <span>Community</span>
-                  <ArrowRight size={18} />
+                  Community
+                  <ArrowRight size={20} />
                 </Link>
               </Button>
             </div>
