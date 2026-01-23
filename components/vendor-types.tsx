@@ -32,18 +32,18 @@ const vendors = [
 
 export default function VendorTypes() {
   return (
-    <section id="vendors" className="py-24 px-4 sm:px-6 lg:px-8 bg-muted/40">
+    <section id="vendors" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-muted/40">
       <div className="mx-auto max-w-7xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4">
             Shop All Categories
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Browse thousands of products from verified campus vendors across food, groceries, accessories, and stationery.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {vendors.map((vendor, index) => {
             const Icon = vendor.icon
             return (

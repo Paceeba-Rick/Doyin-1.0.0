@@ -66,15 +66,15 @@ const AppCarousel = () => {
   }
 
   return (
-    <div className="relative w-full flex items-center justify-center py-8 sm:py-12 px-4">
+    <div className="relative w-full flex items-center justify-center py-6 sm:py-8 lg:py-12 px-4">
       {/* iPhone 14 Pro Max Mockup - Responsive */}
-      <div className="relative" style={{ width: 'clamp(200px, 90vw, 280px)', height: 'clamp(400px, 180vw, 560px)' }}>
+      <div className="relative" style={{ width: 'clamp(160px, 85vw, 280px)', aspectRatio: '9/16' }}>
         {/* Outer phone body - dark titanium */}
         <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900 rounded-3xl shadow-2xl" style={{ padding: '12px' }}>
           {/* Inner screen area with rounded corners */}
           <div className="relative w-full h-full bg-black rounded-3xl overflow-hidden">
             {/* Dynamic Island (notch) */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-50 bg-black rounded-full" style={{ width: '150px', height: '28px', marginTop: '8px' }}></div>
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-50 bg-black rounded-full" style={{ width: 'clamp(80px, 50%, 150px)', height: 'clamp(20px, 6%, 28px)', marginTop: 'clamp(4px, 2%, 8px)' }}></div>
 
             {/* Screen display area */}
             <div className="relative w-full h-full overflow-hidden bg-black">

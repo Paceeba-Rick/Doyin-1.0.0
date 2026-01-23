@@ -6,26 +6,26 @@ import { MapPin, Clock, CheckCircle, ArrowRight } from 'lucide-react'
 
 export default function CustomOrder() {
   return (
-    <section id="custom-order" className="py-24 px-4 sm:px-6 lg:px-8">
+    <section id="custom-order" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
-            <div className="space-y-4">
+          <div className="space-y-6 sm:space-y-8">
+            <div className="space-y-3 sm:space-y-4">
               <div className="inline-block px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
-                <span className="text-sm font-semibold text-accent">Unique Feature</span>
+                <span className="text-xs sm:text-sm font-semibold text-accent">Unique Feature</span>
               </div>
-              <h2 className="text-4xl sm:text-5xl font-bold text-foreground">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                 Custom Order Service
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
                 Don't see what you need? Our delivery agents can run any errand for you. From picking up documents to buying specific items off-campus, we've got you covered.
               </p>
             </div>
 
             {/* How It Works */}
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-foreground">How It Works</h3>
+            <div className="space-y-3 sm:space-y-4">
+              <h3 className="text-lg sm:text-xl font-semibold text-foreground">How It Works</h3>
               <div className="space-y-4">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
