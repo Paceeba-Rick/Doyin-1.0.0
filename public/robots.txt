@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://doyin.app/sitemap.xml
