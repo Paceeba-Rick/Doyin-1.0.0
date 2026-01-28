@@ -66,9 +66,9 @@ const AppCarousel = () => {
   }
 
   return (
-    <div className="relative w-full overflow-x-hidden flex items-center justify-center py-6 sm:py-8 lg:py-12 px-4">
+    <div className="relative w-full overflow-hidden flex items-center justify-center py-6 sm:py-8 lg:py-12 px-2 sm:px-4">
       {/* iPhone 17 Mockup - Responsive */}
-      <div className="relative mx-auto" style={{ width: 'clamp(160px, 85vw, 290px)', aspectRatio: '9/19.5', maxWidth: 'calc(100vw - 32px)' }}>
+      <div className="relative mx-auto" style={{ width: 'clamp(140px, 80vw, 290px)', aspectRatio: '9/19.5', maxWidth: '100%' }}>
         {/* Outer phone body - Premium titanium with ultra-thin bezel */}
         <div 
           className="absolute inset-0 rounded-3xl shadow-2xl"
@@ -115,7 +115,7 @@ const AppCarousel = () => {
               {/* Navigation Arrows - Premium glass-morphism style */}
               <button
                 onClick={prevSlide}
-                className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 z-10 text-white p-2 sm:p-3 rounded-full transition-all text-lg sm:text-base"
+                className="absolute left-0.5 sm:left-2 top-1/2 -translate-y-1/2 z-10 text-white p-1.5 sm:p-3 rounded-full transition-all text-base sm:text-lg"
                 style={{
                   background: 'rgba(255,255,255,0.1)',
                   backdropFilter: 'blur(10px)',
@@ -135,7 +135,7 @@ const AppCarousel = () => {
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 z-10 text-white p-2 sm:p-3 rounded-full transition-all text-lg sm:text-base"
+                className="absolute right-0.5 sm:right-2 top-1/2 -translate-y-1/2 z-10 text-white p-1.5 sm:p-3 rounded-full transition-all text-base sm:text-lg"
                 style={{
                   background: 'rgba(255,255,255,0.1)',
                   backdropFilter: 'blur(10px)',
