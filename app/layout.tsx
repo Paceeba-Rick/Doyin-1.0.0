@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Doyin | Campus Marketplace for Food, Groceries & More | Fast Delivery',
   description: 'Discover Doyin - the ultimate campus e-commerce platform connecting you to food vendors, groceries, accessories, and stationery. Enjoy fast delivery and our unique custom errand service. Shop everything you need right on campus.',
   generator: 'v0.app',
-  metadataBase: new URL('https://doyin.app'),
+  metadataBase: new URL('https://doyin.site'),
   keywords: [
     'campus marketplace',
     'campus delivery',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Doyin | Campus Marketplace for Food, Groceries & More',
     description: 'The all-in-one campus shopping platform with multiple vendors, fast delivery, and convenient custom errand services.',
-    url: 'https://doyin.app',
+    url: 'https://doyin.site',
     siteName: 'Doyin',
     locale: 'en_US',
     type: 'website',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     creator: '@doyinapp',
   },
   alternates: {
-    canonical: 'https://doyin.app',
+    canonical: 'https://doyin.site',
   },
 }
 

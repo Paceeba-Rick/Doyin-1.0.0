@@ -2,7 +2,7 @@
   "name": "Doyin - Campus Marketplace",
   "short_name": "Doyin",
   "description": "Campus-based e-commerce platform with food, groceries, accessories, and stationery vendors. Fast delivery and custom errand services.",
-  "start_url": "https://doyin.app",
+  "start_url": "https://doyin.site",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",

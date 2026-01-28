@@ -3,7 +3,7 @@ export function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Doyin',
-    url: 'https://doyin.app',
+    url: 'https://doyin.site',
     logo: '/images/doyin.jpeg',
     description: 'Campus-based e-commerce marketplace connecting students to food, groceries, accessories, and stationery vendors',
     sameAs: [
@@ -24,7 +24,7 @@ export function StructuredData() {
     name: 'Doyin Campus Marketplace',
     description: 'E-commerce platform for campus-based shopping and delivery',
     image: '/images/doyin.jpeg',
-    url: 'https://doyin.app',
+    url: 'https://doyin.site',
     telephone: '+234-594-473-819',
     priceRange: '$-$$$',
     areaServed: 'Campus',
@@ -35,12 +35,12 @@ export function StructuredData() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Doyin',
-    url: 'https://doyin.app',
+    url: 'https://doyin.site',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://doyin.app/search?q={search_term_string}',
+        urlTemplate: 'https://doyin.site/search?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },

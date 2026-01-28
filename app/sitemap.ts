@@ -3,31 +3,31 @@ import type { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://doyin.app',
+      url: 'https://doyin.site',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: 'https://doyin.app/#features',
+      url: 'https://doyin.site/#features',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://doyin.app/#vendors',
+      url: 'https://doyin.site/#vendors',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: 'https://doyin.app/#custom-order',
+      url: 'https://doyin.site/#custom-order',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://doyin.app/#contact',
+      url: 'https://doyin.site/#contact',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
