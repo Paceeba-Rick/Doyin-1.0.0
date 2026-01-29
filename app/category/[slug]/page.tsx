@@ -1,9 +1,12 @@
+'use client'
+
 import { notFound } from 'next/navigation'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
+import { useEffect } from 'react'
 
 const categoryData: Record<string, { title: string; description: string; products: Array<{ id: string; name: string; description: string }> }> = {
   'food-vendors': {
@@ -71,6 +74,19 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
     notFound()
   }
 
+  useEffect(() => {
+    // Scroll to top when page loads
+    window.scrollTo(0, 0)
+    
+    // Store scroll position before leaving
+    const handleBeforeUnload = () => {
+      sessionStorage.setItem('vendorsSectionScroll', '0')
+    }
+    
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload)
+  }, [params.slug])
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-background">
       <Header />
@@ -79,7 +95,12 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
         <div className="mx-auto max-w-6xl">
           {/* Header */}
           <div className="mb-12">
-            <Link href="/#vendors">
+            <Link 
+              href="/#vendors"
+              onClick={() => {
+                sessionStorage.setItem('shouldScrollToVendors', 'true')
+              }}
+            >
               <Button variant="outline" className="gap-2 mb-6 bg-transparent">
                 <ArrowLeft size={18} />
                 Back to Categories
