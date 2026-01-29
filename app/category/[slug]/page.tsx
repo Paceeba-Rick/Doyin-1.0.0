@@ -135,10 +135,10 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                 </p>
 
                 <Button asChild className="w-full gap-2">
-                  <Link href="#order">
-                    View Products
+                  <a href="https://wa.me/233594473819" target="_blank" rel="noopener noreferrer">
+                    Get More Info
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
-                  </Link>
+                  </a>
                 </Button>
               </div>
             ))}
