@@ -2,27 +2,32 @@
 
 import { Card } from '@/components/ui/card'
 import { UtensilsCrossed, ShoppingCart, Sparkles, BookOpen } from 'lucide-react'
+import Link from 'next/link'
 
 const vendors = [
   {
+    id: 'food-vendors',
     icon: UtensilsCrossed,
     title: 'Food Vendors',
     description: 'Order from your favorite campus eateries, restaurants, and cafes. Hot meals delivered fresh and quick.',
     color: 'from-orange-50 to-orange-100 dark:from-orange-950 dark:to-orange-900'
   },
   {
+    id: 'grocery-vendors',
     icon: ShoppingCart,
     title: 'Grocery Vendors',
     description: 'Essential groceries, snacks, and beverages delivered right to your dorm or study spot.',
     color: 'from-green-50 to-green-100 dark:from-green-950 dark:to-green-900'
   },
   {
+    id: 'accessories',
     icon: Sparkles,
     title: 'Accessories',
     description: 'Fashion items, phone accessories, and more from trusted campus vendors.',
     color: 'from-pink-50 to-pink-100 dark:from-pink-950 dark:to-pink-900'
   },
   {
+    id: 'stationery-more',
     icon: BookOpen,
     title: 'Stationery & More',
     description: 'Study materials, notebooks, pens, and everything you need for classes.',
@@ -44,11 +49,11 @@ export default function VendorTypes() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-          {vendors.map((vendor, index) => {
+          {vendors.map((vendor) => {
             const Icon = vendor.icon
             return (
               <Card 
-                key={index} 
+                key={vendor.id} 
                 className={`p-8 border-2 border-border hover:border-accent hover:shadow-lg transition-all duration-300 overflow-hidden group`}
               >
                 <div className={`absolute -top-12 -right-12 w-40 h-40 bg-gradient-to-br ${vendor.color} rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
@@ -69,10 +74,10 @@ export default function VendorTypes() {
                   </p>
 
                   <div className="mt-6 pt-6 border-t border-border">
-                    <button className="text-accent font-semibold hover:gap-2 flex items-center gap-1 transition-all group/btn">
+                    <Link href={`/category/${vendor.id}`} className="text-accent font-semibold hover:gap-2 flex items-center gap-1 transition-all group/btn">
                       Explore Now
                       <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </Card>
