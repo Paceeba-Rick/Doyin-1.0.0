@@ -105,12 +105,9 @@ const AppCarousel = () => {
                   <img
                     src={slide.image}
                     alt={slide.title}
-                    className="w-full h-full object-contain object-center bg-black"
+                    className="w-full h-full object-cover object-center"
                     crossOrigin="anonymous"
                     loading="eager"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = "/placeholder.svg"
-                    }}
                   />
                 </div>
               ))}
