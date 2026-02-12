@@ -77,6 +77,9 @@ export default function Footer() {
             <p className="text-sm text-secondary-foreground/70">
               © 2026 Doyin. A product of aLien. All rights reserved.
             </p>
+             <p className="text-sm text-secondary-foreground/70">
+              ||Developer : Ceeba
+            </p>
             <div className="flex gap-6 text-sm text-secondary-foreground/70 md:justify-end">
               <Link href="#" className="hover:text-background transition-colors">Privacy Policy</Link>
               <Link href="#" className="hover:text-background transition-colors">Terms of Service</Link>
