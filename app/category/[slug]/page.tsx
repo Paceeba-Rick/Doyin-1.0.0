@@ -1,12 +1,10 @@
-'use client'
-
 import { notFound } from 'next/navigation'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
-import { useEffect } from 'react'
+import ScrollToTop from '@/components/scroll-to-top'
 
 const categoryData: Record<string, { title: string; description: string; products: Array<{ id: string; name: string; description: string }> }> = {
   'food-vendors': {
@@ -74,21 +72,9 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
     notFound()
   }
 
-  useEffect(() => {
-    // Scroll to top when page loads
-    window.scrollTo(0, 0)
-    
-    // Store scroll position before leaving
-    const handleBeforeUnload = () => {
-      sessionStorage.setItem('vendorsSectionScroll', '0')
-    }
-    
-    window.addEventListener('beforeunload', handleBeforeUnload)
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload)
-  }, [params.slug])
-
   return (
     <div className="min-h-screen overflow-x-hidden bg-background">
+      <ScrollToTop />
       <Header />
       
       <div className="min-h-screen pt-20 pb-20 px-4 sm:px-6 lg:px-8">

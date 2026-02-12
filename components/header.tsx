@@ -41,7 +41,7 @@ export default function Header() {
             <Link href="#download">Download App</Link>
           </Button>
           <Button asChild>
-            <Link href="https://wa.me/233594473819">Join Community </Link>
+            <Link href="#contact">Join Community </Link>
           </Button>
         </div>
 
