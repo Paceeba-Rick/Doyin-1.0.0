@@ -80,7 +80,7 @@ export default function Footer() {
             <div className="flex gap-6 text-sm text-secondary-foreground/70 md:justify-end">
               <Link href="#" className="hover:text-background transition-colors">Privacy Policy</Link>
               <Link href="#" className="hover:text-background transition-colors">Terms of Service</Link>
-              <Link href="#" className="hover:text-background transition-colors">Cookie Policy</Link>
+              <Link href="https://wa.me/233533125955" className="hover:text-background transition-colors">Developer: Ceeba</Link>
             </div>
           </div>
         </div>
