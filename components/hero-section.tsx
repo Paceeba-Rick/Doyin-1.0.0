@@ -39,12 +39,6 @@ export default function HeroSection() {
                   Download App
                 </Link>
               </Button>
-              <Button variant="outline" asChild className="gap-2 bg-transparent">
-                <Link href="#contact">
-                  Community
-                  <ArrowRight size={20} />
-                </Link>
-              </Button>
             </div>
 
             {/* Stats */}

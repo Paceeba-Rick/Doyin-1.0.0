@@ -1,9 +1,9 @@
 import { notFound } from 'next/navigation'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
-import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, MessageCircle } from 'lucide-react'
+import ScrollToTop from '@/components/scroll-to-top'
 
 const categoryData: Record<string, { title: string; description: string; products: Array<{ id: string; name: string; description: string }> }> = {
   'food-vendors': {
@@ -73,17 +73,22 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-background">
+      <ScrollToTop />
       <Header />
       
       <div className="min-h-screen pt-20 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           {/* Header */}
           <div className="mb-12">
-            <Link href="/#vendors">
-              <Button variant="outline" className="gap-2 mb-6 bg-transparent">
-                <ArrowLeft size={18} />
-                Back to Categories
-              </Button>
+            <Link 
+              href="/#vendors"
+              onClick={() => {
+                sessionStorage.setItem('shouldScrollToVendors', 'true')
+              }}
+              className="inline-flex items-center gap-2 px-4 py-2 mb-6 border border-border rounded-lg hover:border-accent hover:text-accent transition-all"
+            >
+              <ArrowLeft size={18} />
+              Back to Categories
             </Link>
             
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
@@ -113,12 +118,16 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
                   {product.description}
                 </p>
 
-                <Button asChild className="w-full gap-2">
-                  <Link href="#order">
-                    View Products
-                    <span className="group-hover:translate-x-1 transition-transform">→</span>
-                  </Link>
-                </Button>
+                <a 
+                  href="https://wa.me/233594473819" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-accent text-background rounded-lg font-semibold hover:bg-accent/90 transition-all group"
+                >
+                  <MessageCircle size={20} />
+                  Get More Info on WhatsApp
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </a>
               </div>
             ))}
           </div>

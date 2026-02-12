@@ -103,7 +103,7 @@ const AppCarousel = () => {
                   }`}
                 >
                   <img
-                    src={slide.image || "/placeholder.svg"}
+                    src={slide.image}
                     alt={slide.title}
                     className="w-full h-full object-cover object-center"
                     crossOrigin="anonymous"
