@@ -35,7 +35,7 @@ export default function CustomOrder() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Request Your Errand</h4>
-                    <p className="text-muted-foreground">Describe exactly what you need done through the app.</p>
+                    <p className="text-muted-foreground">Describe exactly what you need done through the app's Chat interface.</p>
                   </div>
                 </div>
 
@@ -66,8 +66,7 @@ export default function CustomOrder() {
             </div>
 
             <Button size="lg" className="gap-2 w-full sm:w-auto">
-              Request Custom Order
-              <ArrowRight size={20} />
+               Custom Order -Do it your way
             </Button>
           </div>
 
