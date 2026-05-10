@@ -77,7 +77,7 @@ export default function VendorTypes() {
                     <Link href={`/category/${vendor.id}`} className="text-accent font-semibold hover:gap-2 
                     flex items-center gap-1 transition-all group/btn">
                       
-                      <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
+                      <span className="group-hover/btn:translate-x-1 transition-transform"></span>
                     </Link>
                   </div>
                 </div>
