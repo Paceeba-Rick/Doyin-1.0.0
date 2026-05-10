@@ -66,13 +66,13 @@ export default function CTA() {
         {/* Badges */}
         <div className="flex flex-wrap justify-center gap-4 mt-12">
           <div className="px-4 py-2 rounded-full bg-card border border-border text-sm font-medium text-foreground">
-            Available on iOS & Android
+            Available on iOS & Android Soon
           </div>
           <div className="px-4 py-2 rounded-full bg-card border border-border text-sm font-medium text-foreground">
-            4.8★ Rating on App Store
+            ★ Rating on App Store
           </div>
           <div className="px-4 py-2 rounded-full bg-card border border-border text-sm font-medium text-foreground">
-            100K+ Downloads
+            - Downloads
           </div>
         </div>
       </div>
