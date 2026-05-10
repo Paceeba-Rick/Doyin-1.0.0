@@ -73,13 +73,6 @@ export default function VendorTypes() {
                     {vendor.description}
                   </p>
 
-                  <div className="mt-6 pt-6 border-t border-border">
-                    <Link href={`/category/${vendor.id}`} className="text-accent font-semibold hover:gap-2 
-                    flex items-center gap-1 transition-all group/btn">
-                      
-                      <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
-                    </Link>
-                  </div>
                 </div>
               </Card>
             )
