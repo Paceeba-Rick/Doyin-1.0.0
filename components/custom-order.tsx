@@ -64,11 +64,6 @@ export default function CustomOrder() {
                 </div>
               </div>
             </div>
-
-            <Button size="lg" className="gap-2 w-full sm:w-auto">
-              Request Custom Order
-              <ArrowRight size={20} />
-            </Button>
           </div>
 
           {/* Right Visual */}
