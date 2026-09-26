@@ -75,7 +75,7 @@ export default function Footer() {
         <div className="border-t border-background/10 py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             <p className="text-sm text-secondary-foreground/70">
-              © 2026 Doyin. A product of Apis. All rights reserved.
+              © 2026 Doyin. A product of NADIR. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm text-secondary-foreground/70 md:justify-end">
               <Link href="#" className="hover:text-background transition-colors">Privacy Policy</Link>
