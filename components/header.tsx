@@ -16,7 +16,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div className="text-2xl font-bold text-primary">Doyin</div>
-          <div className="text-xs font-medium text-muted-foreground">by Apis</div>
+          <div className="text-xs font-medium text-muted-foreground">by NADIR Technologies</div>
         </div>
 
         {/* Desktop Navigation */}
